@@ -29,7 +29,12 @@ SECRET_KEY = 'django-insecure-^kkkvwq)=0&+bi)h4#89d#&mn+^y*g*^5hz&%4o$icta!htikn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'nachtohne.s7.tunnelfrp.com',  # 允许的域名
+    '127.0.0.1',                    # 本地访问
+    'localhost',                    # 本地访问
+    '*',                             # 允许任意IP访问
+]
 
 
 # Application definition
